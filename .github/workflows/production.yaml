@@ -1,0 +1,30 @@
+name: Production
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    Build-and-Deploy-front:
+        runs-on: [self-hosted, X64, Linux]
+        name: Build and deploy
+
+        steps:
+            - name: Set current date to tag the built image with
+              id: version
+              run: echo "builddate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
+
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Copy environment file
+              run: "cp /home/ubuntu/node/farm/.env ."
+
+            - name: Build docker image
+              run: "docker-compose -f ./deployment/docker-compose.prod.yml build"
+
+            - name: Run docker image
+              run: "docker-compose -f ./deployment/docker-compose.prod.yml up -d"
+
+            - name: Cleanup
+              run: "docker system prune -a -f"
