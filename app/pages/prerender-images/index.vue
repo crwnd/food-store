@@ -41,7 +41,8 @@ definePageMeta({
 							{{ config.public.STORE_NAME }}
 						</h1>
 						<p class="text-xl text-gray-700 mb-8 leading-relaxed">
-							Свіжі овочі та фрукти прямо з грядки. Доставляємо в
+							Свіжі овочі та фрукти прямо з грядки та саду.
+							Доставляємо в
 							{{ config.public.STORE_LOCATION.town }} та
 							{{ config.public.STORE_LOCATION.region }}.
 						</p>
