@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { productTypes } from "~/utils";
 import { Check, ShoppingCart } from "lucide-vue-next";
 
 const config = useRuntimeConfig();
@@ -43,6 +44,12 @@ useHead({
 				? `${product.value.name} (${product.value.variety}) - ${product.value.description} Ціна: ${product.value.price} ₴/${product.value.unit}. Замовляйте свіжі продукти з ферми в Квітневому.`
 				: "Не знайдено",
 		},
+		{
+			name: "og:image",
+			content: product.value?.images?.[0]
+				? `${config.public.APP_URL}/_ipx/f_png&q_80&fit_cover&s_512x512${product.value.images[0]}`
+				: null,
+		},
 	],
 });
 
@@ -76,13 +83,7 @@ const getStockStatus = (stock: number) => {
 };
 
 const getTypeLabel = (type: string) => {
-	const types: Record<string, string> = {
-		vegetable: "Овочі",
-		fruit: "Фрукти",
-		berry: "Ягоди",
-		herb: "Зелень",
-	};
-	return types[type] || type;
+	return productTypes.find((e) => e.value === type)?.label || type;
 };
 
 const quantity = ref(1);
@@ -144,7 +145,11 @@ const goToSlide = (index: number) => {
 											:alt="`${
 												product.name
 											} - зображення ${index + 1}`"
-											class="w-auto h-full"
+											class="w-auto h-full rounded-xl overflow-hidden"
+											height="512"
+											width="512"
+											densities="x1 x2"
+											fit="cover"
 										/>
 									</swiper-slide>
 								</swiper-container>
@@ -182,7 +187,6 @@ const goToSlide = (index: number) => {
 									width="80"
 									height="80"
 									class="w-full h-full object-cover"
-									:placeholder="`[80x80] ${product.name}`"
 								/>
 							</button>
 						</div>

@@ -114,3 +114,19 @@ export const getStockStatus = (stock: number) => {
 		return { text: "Залишається мало", class: "text-orange-600" };
 	return { text: "Немає в наявності", class: "text-red-600" };
 };
+
+export type ProductType =
+	| "all"
+	| "vegetable"
+	| "fruit"
+	| "berry"
+	| "herb"
+	| "dried-fruit";
+export const productTypes: { value: ProductType; label: string }[] = [
+	{ value: "all", label: "Всі продукти" },
+	{ value: "vegetable", label: "Овочі" },
+	{ value: "fruit", label: "Фрукти" },
+	{ value: "berry", label: "Ягоди" },
+	{ value: "herb", label: "Зелень" },
+	{ value: "dried-fruit", label: "Сушені фрукти" },
+];

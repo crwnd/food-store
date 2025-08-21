@@ -1,19 +1,11 @@
 <script setup lang="ts">
-import { AppCardProduct } from "#components";
+import { productTypes } from "~/utils";
 
 const config = useRuntimeConfig();
 const productsStore = useProductsStore();
 
 const selectedType = ref<string>("all");
 const searchQuery = ref("");
-
-const productTypes = [
-	{ value: "all", label: "Всі продукти" },
-	{ value: "vegetable", label: "Овочі" },
-	{ value: "fruit", label: "Фрукти" },
-	{ value: "berry", label: "Ягоди" },
-	{ value: "herb", label: "Зелень" },
-];
 
 const filteredProducts = computed(() => {
 	let products = productsStore.getProducts();

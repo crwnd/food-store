@@ -3,7 +3,7 @@ export const useProductsStore = defineStore("products", () => {
 
 	// const productsQuery = $trpc.products.getAll.useQuery();
 
-	const products = computed(() => $products.value); //productsQuery.data.value || []);
+	const products = computed(() => $products?.value ?? []); //productsQuery.data.value || []);
 	const pending = computed(() => false); // productsQuery.status.value === "pending");
 	const error = computed(() => null);
 

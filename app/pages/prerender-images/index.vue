@@ -12,11 +12,24 @@ definePageMeta({
 <template>
 	<div>
 		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-			<AppCardProduct
-				v-for="product in $products"
-				:key="product.id"
-				:product
-			/>
+			<div v-for="product in $products" :key="product.id">
+				<AppCardProduct :product />
+				<NuxtImg
+					v-for="image in product.images"
+					:src="image"
+					height="512"
+					width="512"
+					densities="x1 x2"
+					fit="cover"
+				/>
+				<img
+					:src="
+						product?.images?.[0]
+							? `${config.public.APP_URL}/_ipx/f_png&q_80&fit_cover&s_512x512${product.images[0]}`
+							: undefined
+					"
+				/>
+			</div>
 		</div>
 		<section class="relative py-20 px-4">
 			<div class="max-w-screen-xl mx-auto">

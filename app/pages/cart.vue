@@ -78,18 +78,20 @@ const orderMessage = computed(() => cartStore.getOrderSummary());
 										:alt="item.name"
 										width="80"
 										height="80"
-										class="w-20 h-20 object-cover rounded-lg"
+										class="flex w-20 h-20 flex-shrink-0 object-cover rounded-lg overflow-hidden relative"
 										:placeholder="`[80x80] ${item.name}`"
 									/>
 								</div>
 
 								<!-- Product Info -->
 								<div class="flex-1 min-w-0">
-									<h3
-										class="font-semibold text-lg text-green-800"
-									>
-										{{ item.name }}
-									</h3>
+									<NuxtLink :to="`/product/${item.id}`">
+										<h3
+											class="font-semibold text-lg text-green-800"
+										>
+											{{ item.name }}
+										</h3>
+									</NuxtLink>
 									<p
 										class="text-gray-600 text-sm sm:text-base"
 									>
@@ -292,9 +294,7 @@ const orderMessage = computed(() => cartStore.getOrderSummary());
 							<!-- Order Buttons -->
 							<div class="mt-6 space-y-3">
 								<a
-									:href="`tel:${
-										config.public.CONTACT.phone
-									}?body=${encodeURIComponent(orderMessage)}`"
+									:href="`tel:${config.public.CONTACT.phone}`"
 									class="w-full bg-green-600 text-white px-4 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2 text-sm md:text-base"
 								>
 									<span class="text-lg">📞</span>
