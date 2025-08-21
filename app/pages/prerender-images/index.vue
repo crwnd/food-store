@@ -14,7 +14,7 @@ definePageMeta({
 		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 			<div v-for="product in $products" :key="product.id">
 				<AppCardProduct :product />
-				<NuxtImg
+				<NuxtPicture
 					v-for="image in product.images"
 					:src="image"
 					height="512"
