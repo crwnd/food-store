@@ -25,6 +25,3 @@ jobs:
 
             - name: Run docker image
               run: "docker-compose -f ./deployment/docker-compose.prod.yml up -d"
-
-            - name: Cleanup
-              run: "docker system prune -a -f"
