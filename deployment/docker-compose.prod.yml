@@ -12,4 +12,3 @@ services:
             - ../.env
         security_opt:
             - apparmor:unconfined
-        network_mode: host
