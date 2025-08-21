@@ -56,8 +56,7 @@ useHeadSafe({
 					Каталог продуктів
 				</h1>
 				<p class="text-xl text-green-100">
-					Свіжі овочі, фрукти та зелень прямо з нашої ферми в
-					{{ config.public.STORE_LOCATION.village }}
+					Свіжі овочі, фрукти та зелень прямо з нашої ферми
 				</p>
 			</div>
 		</section>

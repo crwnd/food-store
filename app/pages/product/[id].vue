@@ -392,10 +392,7 @@ const goToSlide = (index: number) => {
 						<h3 class="text-xl font-semibold text-green-700 mb-3">
 							Самовивіз
 						</h3>
-						<p class="text-gray-600">
-							Безкоштовно з ферми в
-							{{ $config.public.STORE_LOCATION.village }}
-						</p>
+						<p class="text-gray-600">Безкоштовно з ферми</p>
 					</div>
 					<div class="bg-white p-6 rounded-xl shadow-lg">
 						<div class="text-4xl mb-4">📦</div>

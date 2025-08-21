@@ -19,8 +19,7 @@ const config = useRuntimeConfig();
 						</span>
 					</div>
 					<p class="text-green-200 text-sm leading-relaxed">
-						Свіжі овочі та фрукти прямо з грядки в селі
-						{{ $config.public.STORE_LOCATION.village }}. Вирощуємо з
+						Свіжі овочі та фрукти прямо з грядки. Вирощуємо з
 						любов'ю, доставляємо з турботою.
 					</p>
 				</div>
@@ -32,7 +31,6 @@ const config = useRuntimeConfig();
 						<div class="flex items-center">
 							<span class="mr-2">📍</span>
 							<span class="text-green-200">
-								{{ $config.public.STORE_LOCATION.village }},
 								{{ $config.public.STORE_LOCATION.region }}
 							</span>
 						</div>

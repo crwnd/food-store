@@ -27,7 +27,6 @@ export default defineNuxtConfig({
 				("production" as "production" | "staging" | "dev"),
 			STORE_NAME: name,
 			STORE_LOCATION: {
-				village: "Квітневе",
 				town: "Бровари",
 				region: "Київська область",
 			},
