@@ -44,7 +44,9 @@ const config = useRuntimeConfig();
 							</a>
 						</div>
 						<div class="flex items-center">
-							<span class="mr-2">💬</span>
+							<span class="mr-2">
+								<AppIconTelegram class="w-5 h-5" />
+							</span>
 							<a
 								:href="`https://t.me/${$config.public.CONTACT.telegram.replace(
 									'@',
@@ -130,11 +132,13 @@ const config = useRuntimeConfig();
 							Доставка:
 						</h4>
 						<p class="text-green-300">
-							📦 Самовивіз з ферми (безкоштовно)<br />
-							🚚 Доставка через Uklon/Bolt (за тарифами
-							сервісу)<br />
-							📍 Зона доставки:
-							{{ $config.public.STORE_LOCATION.town }} та область
+							🧺 Самовивіз з ферми (безкоштовно)<br />
+							📦 Доставка поштовими службами (Нова Пошта чи
+							Укрпошта) (за тарифами сервісу)<br />
+							🚚 Доставка через Uklon/Bolt (за тарифами сервісу)
+							(зона доставки:
+							{{ $config.public.STORE_LOCATION.town }} та
+							{{ $config.public.STORE_LOCATION.region }})
 						</p>
 					</div>
 					<div>

@@ -29,6 +29,7 @@ export default defineNuxtConfig({
 			STORE_LOCATION: {
 				town: "Бровари",
 				region: "Київська область",
+				region_given: "Київську область",
 			},
 			CONTACT: {
 				phone: "+380639533916",

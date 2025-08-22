@@ -30,9 +30,10 @@ useHead({
 						</h1>
 						<p class="text-xl text-gray-700 mb-8 leading-relaxed">
 							Свіжі овочі та фрукти прямо з грядки та саду.
-							Доставляємо в
+							Доставляємо за годину в
 							{{ config.public.STORE_LOCATION.town }} та
-							{{ config.public.STORE_LOCATION.region }}.
+							{{ config.public.STORE_LOCATION.region_given }} або
+							за день по всій Україні.
 						</p>
 						<div class="flex flex-col sm:flex-row gap-4">
 							<NuxtLink
@@ -133,7 +134,8 @@ useHead({
 							Зручна доставка
 						</h3>
 						<p class="text-gray-600">
-							Доставка через Uklon/Bolt або самовивіз з ферми
+							Доставка через Нова Пошта, Укрпошта, Uklon, Bolt або
+							самовивіз з ферми
 						</p>
 					</div>
 				</div>
@@ -148,7 +150,7 @@ useHead({
 				>
 					Способи доставки
 				</h2>
-				<div class="grid md:grid-cols-2 gap-8">
+				<div class="grid md:grid-cols-3 gap-8">
 					<div class="bg-white p-8 rounded-2xl shadow-lg">
 						<div class="text-4xl mb-4">🚗</div>
 						<h3 class="text-2xl font-semibold text-green-700 mb-4">
@@ -167,6 +169,21 @@ useHead({
 					<div class="bg-white p-8 rounded-2xl shadow-lg">
 						<div class="text-4xl mb-4">📦</div>
 						<h3 class="text-2xl font-semibold text-green-700 mb-4">
+							Доставка поштою
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Доставляємо через Нову Пошту та Укрпошту по всій
+							країні.
+						</p>
+						<ul class="text-sm text-gray-600 space-y-2">
+							<li>• Вартість доставки по тарифам сервісу</li>
+							<li>• Відправка в день замовлення</li>
+							<!-- <li>• Мінімальне замовлення: 200 ₴</li> -->
+						</ul>
+					</div>
+					<div class="bg-white p-8 rounded-2xl shadow-lg">
+						<div class="text-4xl mb-4">🚚</div>
+						<h3 class="text-2xl font-semibold text-green-700 mb-4">
 							Доставка кур'єром
 						</h3>
 						<p class="text-gray-600 mb-4">
@@ -177,7 +194,7 @@ useHead({
 						<ul class="text-sm text-gray-600 space-y-2">
 							<li>• Вартість доставки по тарифам сервісу</li>
 							<li>• Доставка в день замовлення</li>
-							<li>• Мінімальне замовлення: 200 ₴</li>
+							<!-- <li>• Мінімальне замовлення: 200 ₴</li> -->
 						</ul>
 					</div>
 				</div>

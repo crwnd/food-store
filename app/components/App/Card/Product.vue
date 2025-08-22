@@ -35,7 +35,8 @@ defineProps({
 						: 'bg-red-100 text-red-800',
 				]"
 			>
-				{{ product.stock }} {{ product.unit }}
+				{{ getStockStatus(product.stock).text }}
+				<!-- {{ product.stock }} {{ product.unit }} -->
 			</div>
 		</div>
 
@@ -64,12 +65,12 @@ defineProps({
 						>/{{ product.unit }}</span
 					>
 				</div>
-				<div
+				<!-- <div
 					:class="getStockStatus(product.stock).class"
 					class="text-sm font-medium"
 				>
 					{{ getStockStatus(product.stock).text }}
-				</div>
+				</div> -->
 			</div>
 
 			<div class="mt-4 flex gap-2">

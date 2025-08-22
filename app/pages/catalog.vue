@@ -179,9 +179,9 @@ useHeadSafe({
 							''
 						)}`"
 						target="_blank"
-						class="bg-green-700 hover:bg-green-800 px-8 py-4 rounded-lg font-semibold transition-colors"
+						class="flex flex-row items-center gap-2 bg-green-700 hover:bg-green-800 px-8 py-4 rounded-lg font-semibold transition-colors"
 					>
-						💬 Telegram
+						<AppIconTelegram class="w-5 h-5" /> Telegram
 					</a>
 				</div>
 			</div>
