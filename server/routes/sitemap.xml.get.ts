@@ -45,7 +45,7 @@ export default defineEventHandler((event: H3Event) => {
 
 	for (const product of products) {
 		xml += getText({
-			url: `${config.public.APP_URL}/products/${product.id}`,
+			url: `${config.public.APP_URL}/product/${product.id}`,
 			lastmod: product.lastCollectionDate,
 			changefreq: "daily",
 			priority: "0.8",
