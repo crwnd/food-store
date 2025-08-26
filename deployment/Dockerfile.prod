@@ -12,7 +12,7 @@ RUN yarn install
 COPY ./ /app/
 
 ENV NODE_OPTIONS=--max_old_space_size=8048
-RUN yarn build
+RUN yarn build:silent
 
 FROM base
 WORKDIR /app
