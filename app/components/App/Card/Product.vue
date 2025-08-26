@@ -58,7 +58,7 @@ defineProps({
 
 			<div class="flex justify-between items-center">
 				<div>
-					<span class="text-2xl font-bold text-green-600">
+					<span class="text-2xl font-bold text-green-700">
 						{{ product.price }} ₴
 					</span>
 					<span class="text-gray-500 text-sm"
@@ -75,7 +75,7 @@ defineProps({
 
 			<div class="mt-4 flex gap-2">
 				<span
-					class="flex-1 bg-green-600 text-white text-center py-2 px-4 rounded-lg font-medium hover:bg-green-700 transition-colors"
+					class="flex-1 bg-green-800 text-white text-center py-2 px-4 rounded-lg font-medium hover:bg-green-700 transition-colors"
 				>
 					Детальніше
 				</span>
@@ -85,14 +85,14 @@ defineProps({
 							? cartStore.removeItem(product.id)
 							: cartStore.addItem(product, 1)
 					"
-					class="bg-green-100 text-green-700 px-4 py-2 rounded-lg hover:bg-green-200 transition-colors relative"
+					class="bg-green-100 text-green-800 px-4 py-2 rounded-lg hover:bg-green-200 transition-colors relative"
 					title="Додати до кошика"
 					:disabled="!product.stock"
 				>
 					<ShoppingCart />
 					<span
 						v-if="cartStore.getItem(product.id)?.quantity"
-						class="absolute -top-3 -right-3 bg-green-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium"
+						class="absolute -top-3 -right-3 bg-green-800 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium"
 					>
 						{{
 							cartStore.getItem(product.id)!.quantity > 99

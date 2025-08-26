@@ -38,13 +38,13 @@ useHead({
 						<div class="flex flex-col sm:flex-row gap-4">
 							<NuxtLink
 								to="/catalog"
-								class="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
+								class="bg-green-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors text-center"
 							>
 								Переглянути каталог
 							</NuxtLink>
 							<a
 								:href="`tel:${config.public.CONTACT.phone}`"
-								class="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-colors text-center"
+								class="border-2 border-green-800 text-green-800 px-8 py-4 rounded-lg font-semibold hover:bg-green-700 hover:border-green-700 hover:text-white transition-colors text-center"
 							>
 								Зателефонувати
 							</a>
@@ -81,7 +81,7 @@ useHead({
 				<div class="text-center mt-12">
 					<NuxtLink
 						to="/catalog"
-						class="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block"
+						class="bg-green-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block"
 					>
 						Переглянути всі продукти
 					</NuxtLink>
@@ -219,7 +219,7 @@ useHead({
 						<div class="text-2xl">📞</div>
 						<div class="flex-1">
 							<div class="font-semibold text-sm">Телефон</div>
-							<div class="text-green-200 text-xs">
+							<div class="text-white text-xs">
 								{{ config.public.CONTACT.phone }}
 							</div>
 						</div>
@@ -235,7 +235,7 @@ useHead({
 						<AppIconTelegram class="w-6 h-6 flex-shrink-0" />
 						<div class="flex-1">
 							<div class="font-semibold text-sm">Telegram</div>
-							<div class="text-green-200 text-xs">
+							<div class="text-white text-xs">
 								{{ config.public.CONTACT.telegram }}
 							</div>
 						</div>
@@ -248,9 +248,7 @@ useHead({
 						<AppIconFacebook class="w-6 h-6 flex-shrink-0" />
 						<div class="flex-1">
 							<div class="font-semibold text-sm">Facebook</div>
-							<div class="text-green-200 text-xs">
-								Наша сторінка
-							</div>
+							<div class="text-white text-xs">Наша сторінка</div>
 						</div>
 					</a>
 					<a
@@ -264,7 +262,7 @@ useHead({
 						<AppIconWhatsApp class="w-6 h-6 flex-shrink-0" />
 						<div class="flex-1">
 							<div class="font-semibold text-sm">WhatsApp</div>
-							<div class="text-green-200 text-xs">
+							<div class="text-white text-xs">
 								{{ config.public.CONTACT.whatsapp }}
 							</div>
 						</div>
