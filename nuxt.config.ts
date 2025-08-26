@@ -95,7 +95,7 @@ export default defineNuxtConfig({
 	},
 
 	image: {
-		quality: 80,
+		quality: 50,
 		format: ["avif", "webp", "png"],
 	},
 
