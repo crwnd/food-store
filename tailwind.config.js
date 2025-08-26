@@ -9,6 +9,7 @@ export default {
 		"./plugins/**/*.{js,ts}",
 		"./nuxt.config.{js,ts}",
 	],
+	future: { hoverOnlyWhenSupported: true },
 	plugins: [],
 	darkMode: "class",
 	theme: {
