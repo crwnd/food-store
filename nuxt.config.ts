@@ -99,6 +99,10 @@ export default defineNuxtConfig({
 		format: ["avif", "webp", "png"],
 	},
 
+	app: {
+		head: { htmlAttrs: { lang: "uk" } },
+	},
+
 	site: {
 		indexable: true,
 		url: process.env.NUXT_PUBLIC_APP_URL,
