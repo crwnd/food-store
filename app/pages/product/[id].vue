@@ -339,7 +339,9 @@ const goToSlide = (index: number) => {
 						<div>
 							<span class="text-gray-500">Останній збір:</span>
 							<span class="ml-2 font-medium">{{
-								formatDate(product.lastCollectionDate)
+								product.lastCollectionDate
+									? formatDate(product.lastCollectionDate)
+									: "Не вказано"
 							}}</span>
 						</div>
 						<div>
