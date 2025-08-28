@@ -3,15 +3,19 @@ import { products } from "../trpc/routers/products";
 
 const getText = (args: {
 	url: string;
-	lastmod: string;
+	lastmod?: string;
 	changefreq: string;
 	priority: string;
 }) => {
 	return `<url>
 
-      <loc>${args.url}</loc>
+      <loc>${args.url}</loc>${
+		args.lastmod
+			? `
 
-      <lastmod>${args.lastmod.split("T")[0]}</lastmod>
+      <lastmod>${args.lastmod.split("T")[0]}</lastmod>`
+			: ""
+	}
 
       <changefreq>${args.changefreq}</changefreq>
 
@@ -46,7 +50,7 @@ export default defineEventHandler((event: H3Event) => {
 	for (const product of products) {
 		xml += getText({
 			url: `${config.public.APP_URL}/product/${product.id}`,
-			lastmod: product.lastCollectionDate,
+			lastmod: product.lastCollectionDate ?? undefined,
 			changefreq: "daily",
 			priority: "0.8",
 		});
