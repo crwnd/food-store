@@ -100,11 +100,40 @@ export const findFirstFieldValueInsensitive = (
 	return null;
 };
 
+const monthNames = [
+	"січень",
+	"лютий",
+	"березень",
+	"квітень",
+	"травень",
+	"червень",
+	"липень",
+	"серпень",
+	"вересень",
+	"жовтень",
+	"листопад",
+	"грудень",
+];
 export const formatDate = (dateString: string) => {
+	if (!dateString) return "";
+	if (dateString.length === 4 && !isNaN(Number(dateString))) {
+		return `${dateString} рік`;
+	}
+	if (
+		dateString.length === 7 &&
+		!isNaN(Number(dateString.replace("-", "")))
+	) {
+		const [year, month] = dateString.split("-").map(Number) as [
+			number,
+			number
+		];
+		return `${monthNames[month]} ${year}`;
+	}
 	const date = new Date(dateString);
 	return date.toLocaleDateString("uk-UA", {
 		day: "numeric",
 		month: "long",
+		year: "numeric",
 	});
 };
 

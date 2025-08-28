@@ -4,12 +4,14 @@ import { ShoppingCart } from "lucide-vue-next";
 
 const cartStore = useCartStore();
 
-defineProps({
+const props = defineProps({
 	product: {
 		type: Object,
 		required: true,
 	},
 });
+
+const date = computed(() => formatDate(props.product.lastCollectionDate));
 </script>
 <template>
 	<NuxtLink
@@ -47,10 +49,12 @@ defineProps({
 			<p class="text-sm text-gray-600 mb-1">
 				Сорт: {{ product.variety }}
 			</p>
-			<p class="text-sm text-gray-500 mb-3">
-				Зібрано:
-				{{ formatDate(product.lastCollectionDate) }}
-			</p>
+			<div class="text-sm text-gray-500 mb-3">
+				<p v-if="date">
+					Зібрано:
+					{{ date }}
+				</p>
+			</div>
 
 			<p class="text-gray-700 text-sm mb-4 line-clamp-2">
 				{{ product.description }}

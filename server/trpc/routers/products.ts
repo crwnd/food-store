@@ -11,7 +11,7 @@ export interface Product {
 	price: number;
 	unit: "кг" | "шт" | "пучок" | "л";
 	stock: number;
-	lastCollectionDate: string; // ISO date string
+	lastCollectionDate: string | null; // '2023-08-15' or '2025-01' or '2023' or null
 	images: string[];
 	featured?: boolean;
 }
@@ -127,7 +127,8 @@ export const products: Product[] = [
 		price: 50,
 		unit: "кг",
 		stock: 15,
-		lastCollectionDate: "2025-08-19",
+		// lastCollectionDate: "2025-08-19",
+		lastCollectionDate: null,
 		images: [
 			"/images/peaches-vertical-2000x1400.jpg",
 			"/images/peaches-2.jpg",
@@ -149,11 +150,24 @@ export const products: Product[] = [
 Кулінарне використання як окремий перекус чи ласощі; як добавка до вівсяної та інших каш, мюслі, у випічці, десертах, запіканках, кексах; ідеальний варіант для приготування компотів, киселів, узвару.`,
 		type: "dried-fruit",
 		variety: "Мар'яна, Клаппа, Бера",
-		price: 200,
+		price: 220,
 		unit: "кг",
 		stock: 15,
 		lastCollectionDate: "2025-08-21",
 		images: ["/images/dried-peaches-1.jpg"],
+		featured: true,
+	},
+	{
+		id: "11",
+		name: "Чищені горіхи",
+		description: `Домашні горіхи волоські грецькі. Смачні. Ручне чищення. Врожай 2024 року.`,
+		type: "dried-fruit",
+		variety: "Грецький",
+		price: 210,
+		unit: "кг",
+		stock: 12,
+		lastCollectionDate: "2024",
+		images: ["/images/cleaned-walnut-1.jpg"],
 		featured: true,
 	},
 ];
