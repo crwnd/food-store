@@ -12,7 +12,6 @@ export default defineNuxtConfig({
 		"@nuxtjs/robots",
 		"@nuxtjs/tailwindcss",
 		"nuxt-svgo",
-		"@nuxtjs/leaflet",
 		"@pinia/nuxt",
 		"@nuxt/image",
 		"nuxt-swiper",
