@@ -49,7 +49,7 @@ const date = computed(() => formatDate(props.product.lastCollectionDate));
 			<p class="text-sm text-gray-600 mb-1">
 				Сорт: {{ product.variety }}
 			</p>
-			<div class="text-sm text-gray-500 mb-3">
+			<div class="h-5 text-sm text-gray-500 mb-3">
 				<p v-if="date">
 					Зібрано:
 					{{ date }}
