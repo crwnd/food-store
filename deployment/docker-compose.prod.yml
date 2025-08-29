@@ -3,7 +3,7 @@ name: "food-store"
 services:
     # Nuxt.js service
     web:
-        container_name: website
+        container_name: "food-store-website"
         build:
             context: "../"
             dockerfile: "./deployment/Dockerfile.prod"
