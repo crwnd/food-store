@@ -1,3 +1,5 @@
+name: "food-store"
+
 services:
     # Nuxt.js service
     web:
