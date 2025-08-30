@@ -51,6 +51,51 @@ useHead({
 				: null,
 		},
 	],
+	script: [
+		{
+			type: "application/ld+json",
+			textContent: JSON.stringify(
+				product.value
+					? {
+							"@context": "https://schema.org/",
+							"@type": "Product",
+							name: product.value.name,
+							image: product.value.images?.map(
+								(img) =>
+									`${config.public.APP_URL}/_ipx/f_png&q_80&fit_cover&s_512x512${img}`
+							),
+							description: product.value.description,
+							sku: null, //product.value.id,
+							mpn: null, //product.value.id,
+							// brand: {
+							// 	"@type": "Brand",
+							// 	name: config.public.STORE_NAME,
+							// },
+							brand: null,
+							offers: {
+								"@type": "Offer",
+								url: `${config.public.APP_URL}/product/${product.value.id}`,
+								priceCurrency: "UAH",
+								price: product.value.price,
+								priceValidUntil: new Date(
+									new Date().setFullYear(
+										new Date().getFullYear() + 1
+									)
+								)
+									.toISOString()
+									.split("T")[0],
+								itemCondition:
+									"https://schema.org/NewCondition",
+								availability:
+									product.value.stock > 0
+										? "https://schema.org/InStock"
+										: "https://schema.org/OutOfStock",
+							},
+					  }
+					: null
+			),
+		},
+	],
 });
 
 const formatDate = (dateString: string) => {
