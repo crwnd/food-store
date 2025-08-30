@@ -6310,7 +6310,7 @@ __metadata:
     vue-toastification: "npm:^2.0.0-rc.5"
     vue3-openlayers: "npm:^11.6.2"
     zod: "npm:^4"
-    zod-form-data: "npm:3.0.0"
+    zod-form-data: "npm:3.0.1"
   languageName: unknown
   linkType: soft
 
@@ -11779,14 +11779,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod-form-data@npm:3.0.0":
-  version: 3.0.0
-  resolution: "zod-form-data@npm:3.0.0"
+"zod-form-data@npm:3.0.1":
+  version: 3.0.1
+  resolution: "zod-form-data@npm:3.0.1"
   dependencies:
     "@rvf/set-get": "npm:^7.0.0"
   peerDependencies:
     zod: ">= 3.25.0"
-  checksum: 10c0/93a00e96156f741b591bd164519342a76f0c45b4adfc1b44c12ac00bfdab4581bd7a4613d2c7c9b698b67b53c3ddc593f5af8b9953c9739e6b19026fd414c0ab
+  checksum: 10c0/143f501d139c2ee9ad50b0252eab72645724476ad602297c0bbf2f8bf5fc0012a2b82be0ff26ba0e2dab88a4f6c493a3994c668ef30fc7560f3b0d0df744d7b6
   languageName: node
   linkType: hard
 
