@@ -13,11 +13,11 @@
 	},
 	"dependencies": {
 		"@nuxt/image": "1.11.0",
-		"@nuxtjs/robots": "^5.5.1",
-		"@nuxtjs/sitemap": "^7.4.3",
+		"@nuxtjs/robots": "^5.5.5",
+		"@nuxtjs/sitemap": "^7.4.7",
 		"@pinia/nuxt": "^0.11.2",
-		"@trpc/client": "^11.5.0",
-		"@trpc/server": "^11.5.0",
+		"@trpc/client": "^11.6.0",
+		"@trpc/server": "^11.6.0",
 		"@vueform/multiselect": "^2.6.11",
 		"@vuepic/vue-datepicker": "^11.0.2",
 		"chroma-js": "^3.1.2",
@@ -27,7 +27,7 @@
 		"lucide-vue-next": "latest",
 		"mime-types": "^3.0.1",
 		"mini-svg-data-uri": "^1.4.4",
-		"nuxt": "4.0.3",
+		"nuxt": "4.1.2",
 		"nuxt-svgo": "^4.2.6",
 		"nuxt-swiper": "^2.0.1",
 		"ofetch": "^1.4.1",
@@ -35,12 +35,11 @@
 		"qs": "^6.14.0",
 		"trpc-nuxt": "^1.2.0",
 		"typescript": "^5.9.2",
-		"uuid": "^11.1.0",
+		"uuid": "^13.0.0",
 		"vite-node": "latest",
 		"vue-draggable-plus": "^0.6.0",
 		"vue-multiselect": "^3.3.1",
 		"vue-toastification": "^2.0.0-rc.5",
-		"vue3-openlayers": "^11.6.2",
 		"zod": "^4",
 		"zod-form-data": "3.0.1"
 	},
@@ -49,7 +48,7 @@
 		"@types/lodash": "^4.17.20",
 		"@types/mime-types": "^3.0.1",
 		"@types/qs": "^6",
-		"sass-embedded": "^1.91.0"
+		"sass-embedded": "^1.93.2"
 	},
-	"packageManager": "yarn@4.9.3"
+	"packageManager": "yarn@4.10.3"
 }
