@@ -126,7 +126,7 @@ export const products: Product[] = [
 		variety: "Мар'яна, Клаппа",
 		price: 50,
 		unit: "кг",
-		stock: 15,
+		stock: 0,
 		// lastCollectionDate: "2025-08-19",
 		lastCollectionDate: null,
 		images: [
