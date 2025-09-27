@@ -2,12 +2,11 @@ FROM node:current-alpine3.22 AS base
 FROM base AS build
 
 WORKDIR /app
-RUN corepack enable && yarn set version berry
 
 # Copy package files first for better layer caching
 COPY package.json yarn.lock .yarnrc.yml ./
 
-RUN yarn install
+RUN corepack enable && yarn
 
 COPY ./ /app/
 
