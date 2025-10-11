@@ -15,13 +15,13 @@ jobs:
               run: echo "builddate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
 
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Copy environment file
-              run: "cp /home/ubuntu/node/farm/.env ."
+              run: "cp /home/alex/node/farm/.env ."
 
             - name: Build docker image
-              run: "docker-compose -f ./deployment/docker-compose.prod.yml build"
+              run: "docker compose -f ./deployment/docker-compose.prod.yml build"
 
             - name: Run docker image
-              run: "docker-compose -f ./deployment/docker-compose.prod.yml up -d"
+              run: "docker compose -f ./deployment/docker-compose.prod.yml up -d"
