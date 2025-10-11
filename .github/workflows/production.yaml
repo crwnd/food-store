@@ -18,7 +18,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Copy environment file
-              run: "cp /home/alex/node/farm/.env ."
+              run: "cp /home/alex/node/food-store/.env ."
 
             - name: Build docker image
               run: "docker compose -f ./deployment/docker-compose.prod.yml build"
