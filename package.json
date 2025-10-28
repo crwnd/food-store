@@ -50,5 +50,8 @@
 		"@types/qs": "^6",
 		"sass-embedded": "^1.93.2"
 	},
+	"resolutions": {
+		"@vue/devtools-kit": "8.0.3"
+	},
 	"packageManager": "yarn@4.10.3"
 }
