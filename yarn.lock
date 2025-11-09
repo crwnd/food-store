@@ -2606,7 +2606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-kit@npm:8.0.3":
+"@vue/devtools-kit@npm:>=8.0.3":
   version: 8.0.3
   resolution: "@vue/devtools-kit@npm:8.0.3"
   dependencies:
@@ -8127,7 +8127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.34.3":
+"sharp@npm:latest":
   version: 0.34.5
   resolution: "sharp@npm:0.34.5"
   dependencies:

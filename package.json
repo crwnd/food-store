@@ -51,7 +51,10 @@
 		"sass-embedded": "^1.93.3"
 	},
 	"resolutions": {
-		"@vue/devtools-kit": "8.0.3"
+		"is-async-function": "2.1.0",
+		"better-sqlite3": "latest",
+		"sharp": "latest",
+		"@vue/devtools-kit": ">=8.0.3"
 	},
 	"packageManager": "yarn@4.11.0"
 }
