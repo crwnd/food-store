@@ -1,6 +1,6 @@
 {
-	"name": "isofarmresearch-web",
-	"version": "0.2.14",
+	"name": "app",
+	"version": "0.0.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -12,14 +12,14 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
-		"@nuxt/image": "1.11.0",
+		"@nuxt/image": "2.0.0",
 		"@nuxtjs/robots": "^5.5.6",
 		"@nuxtjs/sitemap": "^7.4.7",
-		"@pinia/nuxt": "^0.11.2",
+		"@pinia/nuxt": "^0.11.3",
 		"@trpc/client": "^11.7.1",
 		"@trpc/server": "^11.7.1",
 		"@vueform/multiselect": "^2.6.11",
-		"@vuepic/vue-datepicker": "^11.0.3",
+		"@vuepic/vue-datepicker": "^12.0.3",
 		"chroma-js": "^3.1.2",
 		"decimal.js": "^10.6.0",
 		"jsonwebtoken": "^9.0.2",
@@ -27,11 +27,11 @@
 		"lucide-vue-next": "latest",
 		"mime-types": "^3.0.1",
 		"mini-svg-data-uri": "^1.4.4",
-		"nuxt": "4.2.0",
+		"nuxt": "4.2.1",
 		"nuxt-svgo": "^4.2.6",
 		"nuxt-swiper": "^2.0.1",
-		"ofetch": "^1.5.0",
-		"pinia": "^3.0.3",
+		"ofetch": "^1.5.1",
+		"pinia": "^3.0.4",
 		"qs": "^6.14.0",
 		"trpc-nuxt": "^1.2.0",
 		"typescript": "^5.9.3",
@@ -48,10 +48,10 @@
 		"@types/lodash": "^4.17.20",
 		"@types/mime-types": "^3.0.1",
 		"@types/qs": "^6",
-		"sass-embedded": "^1.93.2"
+		"sass-embedded": "^1.93.3"
 	},
 	"resolutions": {
 		"@vue/devtools-kit": "8.0.3"
 	},
-	"packageManager": "yarn@4.10.3"
+	"packageManager": "yarn@4.11.0"
 }
