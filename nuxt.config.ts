@@ -59,7 +59,7 @@ export default defineNuxtConfig({
 		transpile: ["trpc-nuxt"],
 	},
 
-	compatibilityDate: "2025-07-05",
+	compatibilityDate: "2025-11-09",
 	devtools: { enabled: false },
 	css: ["~/assets/css/main.css"],
 

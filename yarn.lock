@@ -1224,7 +1224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.0, @nuxt/kit@npm:^3.17.2, @nuxt/kit@npm:^3.19.3, @nuxt/kit@npm:^3.4.0":
+"@nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.0, @nuxt/kit@npm:^3.17.2, @nuxt/kit@npm:^3.19.3, @nuxt/kit@npm:^3.4.0, @nuxt/kit@npm:^3.9.0":
   version: 3.20.1
   resolution: "@nuxt/kit@npm:3.20.1"
   dependencies:
@@ -1918,14 +1918,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.11.3":
-  version: 0.11.3
-  resolution: "@pinia/nuxt@npm:0.11.3"
+"@pinia/nuxt@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@pinia/nuxt@npm:0.11.2"
   dependencies:
-    "@nuxt/kit": "npm:^4.2.0"
+    "@nuxt/kit": "npm:^3.9.0"
   peerDependencies:
-    pinia: ^3.0.4
-  checksum: 10c0/3aba259e997e0a332713c3a092339e5256f26325ec70640be438a225e7d3adc45443b03c4a36b37a5959d8610781fcd3a67d47dec3582aaef05e6579042240b7
+    pinia: ^3.0.3
+  checksum: 10c0/baf0c496ce81043f2881d5d00124517b14983638d1ee28061786d3a26d23a2f3b899a841b348ab8ebaaca65613640ddbaa560cefecda4f4f9ca0cf7a5815c750
   languageName: node
   linkType: hard
 
@@ -2870,7 +2870,7 @@ __metadata:
     "@nuxtjs/robots": "npm:^5.5.6"
     "@nuxtjs/sitemap": "npm:^7.4.7"
     "@nuxtjs/tailwindcss": "npm:6.14.0"
-    "@pinia/nuxt": "npm:^0.11.3"
+    "@pinia/nuxt": "npm:0.11.2"
     "@trpc/client": "npm:^11.7.1"
     "@trpc/server": "npm:^11.7.1"
     "@types/lodash": "npm:^4.17.20"

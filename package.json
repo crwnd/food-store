@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "nuxt dev --host",
+		"dev": "nuxt dev --host 0.0.0.0",
 		"dev:inspect": "nuxt dev --inspect",
 		"build": "nuxt build",
 		"build:silent": "nuxt build --logLevel=silent",
@@ -15,7 +15,7 @@
 		"@nuxt/image": "2.0.0",
 		"@nuxtjs/robots": "^5.5.6",
 		"@nuxtjs/sitemap": "^7.4.7",
-		"@pinia/nuxt": "^0.11.3",
+		"@pinia/nuxt": "0.11.2",
 		"@trpc/client": "^11.7.1",
 		"@trpc/server": "^11.7.1",
 		"@vueform/multiselect": "^2.6.11",
