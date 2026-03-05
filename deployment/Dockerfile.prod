@@ -22,6 +22,6 @@ COPY --from=build --chown=node:node /app/.env /app/packages/website/.env
 COPY --from=build --chown=node:node /app/packages/website/.output/ /app/packages/website/.output
 # COPY --from=build --chown=node:node /app/packages/prisma /app/packages/prisma
 # COPY --from=build --chown=node:node /app/.env /app/packages/prisma/.env
-# COPY --from=build --chown=node:node /app/deployment/run.sh /app/deployment/run.sh
+COPY --from=build --chown=node:node /app/deployment/run.sh /app/deployment/run.sh
 
 CMD ["sh", "deployment/run.sh"]
