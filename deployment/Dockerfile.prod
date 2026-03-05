@@ -12,6 +12,7 @@ RUN yarn
 
 COPY ./ /app/
 
+WORKDIR /app/packages/website
 ENV NODE_OPTIONS=--max_old_space_size=8048
 RUN yarn build
 
