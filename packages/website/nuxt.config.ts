@@ -1,4 +1,4 @@
-import packageJSON from "./package.json";
+import packageJSON from "../../package.json";
 
 const isDev = process.env.NUXT_PUBLIC_APP_ENV === "dev";
 
